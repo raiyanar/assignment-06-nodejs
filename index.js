@@ -8,6 +8,12 @@ let statusCode = 200;
 const server = http.createServer((req, res) => {
   if (req.url == "/") {
     filePath = path.join(__dirname, "views", "home.html");
+  } else if (req.url == "/blog") {
+    filePath = path.join(__dirname, "views", "blog.html");
+  } else if (req.url == "/about") {
+    filePath = path.join(__dirname, "views", "about.html");
+  } else if (req.url == "/contact") {
+    filePath = path.join(__dirname, "views", "contact.html");
   } else {
     filePath = path.join(__dirname, "views", "error.html");
     statusCode = 404;

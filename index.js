@@ -5,7 +5,14 @@ const path = require("path");
 let filePath = "";
 let statusCode = 200;
 
-const server = http.createServer((req, res) => {});
+const server = http.createServer((req, res) => {
+  if (req.url == "/") {
+    filePath = path.join(__dirname, "views", "home.html");
+  } else {
+    filePath = path.join(__dirname, "views", "error.html");
+    statusCode = 404;
+  }
+});
 
 server.listen(5000, () => {
   console.log("Server is running on PORT 5000.");

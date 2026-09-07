@@ -1,7 +1,7 @@
 /* 
 Node.js ব্যবহার করে একটি Simple HTTP Server তৈরি করতে হবে।
 Requirements
-1. Create HTTP Server
+1. Create HTTP Server.
 http module ব্যবহার করে একটি Server তৈরি করতে হবে।
 Server অবশ্যই Port 5000 এ Run করবে।
 */

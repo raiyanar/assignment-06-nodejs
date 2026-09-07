@@ -1,13 +1,21 @@
 {
-  "name": "9.-module-9-assignment",
+  "name": "assignment-06-nodejs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raiyanar/assignment-06-nodejs.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/raiyanar/assignment-06-nodejs/issues"
+  },
+  "homepage": "https://github.com/raiyanar/assignment-06-nodejs#readme"
 }

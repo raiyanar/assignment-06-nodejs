@@ -34,16 +34,3 @@ const server = http.createServer((req, res) => {
 server.listen(5000, () => {
   console.log("Server is running on PORT 5000.");
 });
-
-/*
-Commit
-কমপক্ষে ৫টি Meaningful Commit থাকতে হবে।
-Example:
-Initialize Node Project
-Create HTTP Server
-Add Home Route
-Add Blog, About  & Contact Route
-Complete Assignment
-Submission Rules: 
-Git এ  পুশ করে রিপোজিটরি লিংক দিতে হবে। অবশ্যই লিংক পাবলিক রাখতে হবে। Git Link  ছাড়া যদি আপনি সরাসরি zip আকারে জমা করেন তাহলে 0 পাবেন।  
-*/

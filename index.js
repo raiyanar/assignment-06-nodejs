@@ -18,6 +18,17 @@ const server = http.createServer((req, res) => {
     filePath = path.join(__dirname, "views", "error.html");
     statusCode = 404;
   }
+
+  fs.readFile(filePath, (err, data) => {
+    if (err) {
+      res.writeHead(500, { "content-type": "text/plain" });
+      res.end("Internal Server Error.");
+      return;
+    }
+
+    res.writeHead(statusCode, { "content-type": "text/html" });
+    res.end(data);
+  });
 });
 
 server.listen(5000, () => {
